@@ -86,6 +86,14 @@ function App() {
     setpinnedMusic(JSON.parse(localStorage.getItem("pinnedMusic")));
   }, [setIsLoading, setLikedMusic, setpinnedMusic]);
 
+  const dashboardStyles = {
+    backgroundImage: 'url(https://miro.medium.com/v2/resize:fit:3840/format:webp/1*3l_gNnYqeGpwNUoQEYGM9w.jpeg)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    height: '100vh',
+  };
+
   return (
     <>
       <Navbar
@@ -146,18 +154,11 @@ function App() {
           <div className="col-12 py-5 text-center">
             <h1>
               <i className="bi bi-music-note-list mx-3"></i>
-              v-music
+              Blacklist Library
             </h1>
             <h3 className="py-5">Discover music in 30 seconds</h3>
             <div>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-dark"
-                href="https://github.com/Vishesh-Pandey/v-music"
-              >
-                <i className="bi bi-github mx-2"></i>Github
-              </a>
+          
             </div>
           </div>
         </div>
